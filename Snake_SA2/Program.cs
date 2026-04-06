@@ -4,12 +4,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Field field = new Field(20,10);
+        Snake snake = new Snake();
+
         Console.WriteLine("start game");
         bool start = true;
+        field.Render();
+        field.field[snake.Head.X][snake.Head.Y] = '@';
         while (start)
         {
+            Console.Clear();
+            field.Draw();
             char move = Console.ReadKey().KeyChar;
-            Snake snake = new Snake();
             switch (move)
             {
                 case 'w':
