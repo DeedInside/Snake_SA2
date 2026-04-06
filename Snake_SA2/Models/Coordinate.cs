@@ -2,9 +2,9 @@
 {
     public class Coordinate
     {
-        public ushort X = 0;
-        public ushort Y = 0;
-        public Coordinate(ushort x, ushort y)
+        public short X = 0;
+        public short Y = 0;
+        public Coordinate(short x, short y)
         {
             X = x;
             Y = y;

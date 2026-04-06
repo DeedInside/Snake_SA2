@@ -24,7 +24,7 @@ internal class Program
                         {
                             snake.Vector.MoveUp(); //изменить вектор
                             snake.Move(); //изменить координату головы
-                            Console.WriteLine(snake.Head);
+                           //изменить координату головы на поле
                         }
                         catch
                         {
